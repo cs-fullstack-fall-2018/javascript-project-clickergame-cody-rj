@@ -25,13 +25,12 @@ function Score(){
 
     View_Score = View_Score + Manuel_Increase_Number + Auto_Increase_Number;
 
-    var e = document.getElementsById("total_clicks");
+    var e = document.getElementById("total_clicks");
     e.innerHTML = View_Score;
 
 }
 
 //Function to purchase upgrades
-
 function Purchase() {
 
 
