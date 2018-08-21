@@ -48,6 +48,9 @@ function UpgradeCounter() {
 //Function to increase the Auto Counter
 function UpgradeAuto() {
 
+    if (Original_Number > Cost ) {
+
+    }
 
 }
 
@@ -61,4 +64,26 @@ function Auto() {
             Score();
 
         }, click_Rate);
+
+    document.getElementById("Auto").setAttribute("disabled", "disabled");
+}
+
+
+function DisableButtons() {
+
+    if (original )
+}
+
+
+function UpgradeAuto2() {
+
+    interval_auto = setInterval(function() {
+
+        Original_Number += Auto_Increase_Number;
+
+        Score();
+
+    }, click_Rate);
+
+    document.getElementById("UpgradedAuto").setAttribute("disabled", "disabled");
 }
