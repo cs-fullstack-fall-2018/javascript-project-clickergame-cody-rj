@@ -1,4 +1,4 @@
-var Original_Number = 0;
+    var Original_Number = 0;
 
 var Manuel_Increase_Number = 1;
 

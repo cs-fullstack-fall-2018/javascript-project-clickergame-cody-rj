@@ -1,7 +1,8 @@
 .header {
 
     text-align: center;
-
+    margin-top: 150px;
+    color: lime;
 }
 
 .container .row {
@@ -11,6 +12,26 @@
 }
 
 .container .Score h3 {
-
+    color: lime;
     text-align: center;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 1600px;
+}
+button{
+    background-color: transparent;
+    border-color: slategrey;
+}
+#IncreaseMan{
+    color: limegreen;
+}
+#Auto{
+    color: red;
+}
+#UpgradeAuto{
+    color: yellow;
+}
+#UpgradeMan{
+    color: lawngreen;
 }
