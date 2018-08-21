@@ -8,6 +8,8 @@ var View_Score = 0;
 
 var Cost = 0;
 
+var click_Rate = 1000;
+
 
 
 
@@ -47,4 +49,16 @@ function UpgradeCounter() {
 function UpgradeAuto() {
 
 
+}
+
+//Function for the Auto Increase
+function Auto() {
+
+        interval_auto = setInterval(function() {
+
+            Original_Number += Auto_Increase_Number;
+
+            Score();
+
+        }, click_Rate);
 }
