@@ -3,7 +3,6 @@
 <head>
     <link rel="stylesheet" href="Minnie.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="Min.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -18,10 +17,17 @@
 
     </div>
 
+    <div class="jumbotron">
 
-    <div class="Score">
+        <div class="Score">
 
+            <h3>
 
+                Cookies Counted: <span id="total_clicks">0</span>
+
+            </h3>
+
+        </div>
 
     </div>
 
@@ -30,11 +36,11 @@
 
         <div class="row">
 
-            <button onclick="Increase()">+1</button>
+            <button id="IncreaseMan" onclick="Increase()">+1</button>
 
-            <button onclick="UpgradeCounter()">25 points to Increase Counter</button>
+            <button id="UpgradeMan" onclick="UpgradeCounter()">25 points to Increase Counter</button>
 
-            <button onclick="UpgradeAuto()">100 points to Auto Count +1</button>
+            <button id="UpgradeAuto" onclick="UpgradeAuto()">100 points to Auto Count +1</button>
 
         </div>
     </div>
@@ -44,6 +50,6 @@
 
 
 
-
+<script src="Min.js"></script>
 </body>
 </html>
