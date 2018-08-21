@@ -10,8 +10,18 @@ var Cost = 0;
 
 var click_Rate = 1000;
 
+//disables the auto button
+// document.getElementById("Auto").setAttribute("disabled", "disabled");
 
+//diables the purchase manual counter button
 
+// if (View_Score >= 25) {
+//
+//     document.getElementById('Auto').removeAttribute("disabled");
+//
+//     Purchase();
+//
+// }
 
 // Funciton to Manuelly Increase the score
 function Increase() {
@@ -35,12 +45,24 @@ function Score(){
 //Function to purchase upgrades
 function Purchase() {
 
-
+    // View_Score =- 25;
+    //
+    // function Increase() {
+    //
+    //     Original_Number +=5;
+    //
+    //     Score();
+    //
+    // }
 
 }
 
 // Function to upgrade the manual counter
 function UpgradeCounter() {
+
+    Original_Number +=5;
+
+    Score();
 
 
 }
@@ -48,11 +70,17 @@ function UpgradeCounter() {
 //Function to increase the Auto Counter
 function UpgradeAuto() {
 
-    if (Original_Number > Cost ) {
+    if (View_Score > 100 ) {
 
+        document.getElementById('Auto').removeAttribute("disabled");
+
+        // UpgradeAuto2();
     }
 
 }
+
+UpgradeAuto();
+
 
 //Function for the Auto Increase
 function Auto() {
@@ -69,21 +97,25 @@ function Auto() {
 }
 
 
-function DisableButtons() {
-
-    if (original )
-}
-
-
-function UpgradeAuto2() {
-
-    interval_auto = setInterval(function() {
-
-        Original_Number += Auto_Increase_Number;
-
-        Score();
-
-    }, click_Rate);
-
-    document.getElementById("UpgradedAuto").setAttribute("disabled", "disabled");
-}
+// function DisableButtons() {
+//
+//     if (original ) {
+//
+//     }
+// }
+//
+//
+// function UpgradeAuto2() {
+//
+//     Auto_Increase_Number = 5;
+//
+//     interval_auto = setInterval(function() {
+//
+//         Original_Number += Auto_Increase_Number;
+//
+//         Score();
+//
+//     }, click_Rate);
+//
+//     document.getElementById("UpgradedAuto").setAttribute("disabled", "disabled");
+// }
